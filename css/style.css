@@ -1,0 +1,352 @@
+/*############################*/
+/*** global css  ***/
+/*############################*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14;
+  color: #777;
+  margin-top: 110px;
+  background-color: #2d2d30;
+}
+
+#Intro {
+  top: 0;
+  position: fixed;
+  z-index: 5000;
+  background-color: #660000;
+  height: 40px;
+  width: 100%;
+  color: #fff;
+  padding-top: 10px;
+  padding-right: 15px;
+  text-align: right;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.wrapper {
+  text-align: center;
+
+}
+
+
+a.button {
+
+  text-decoration:none;
+  background-color: #660000;
+  font-weight: 600;
+  font-size: 1.5em;
+  z-index: 9999;
+  color: #fff;
+  text-shadow: 1px 1px 0px #000;
+  border-radius: 8px;
+
+  width: 150px;
+  padding-top:10px;
+  padding-bottom:10px;
+  position: absolute;
+  margin: -20px -75px;
+  bottom: 18%;
+  left: 50%;
+}
+
+hr {
+  border-color: #777;
+}
+
+.container.white,
+.container.gray
+{
+  padding: 80px 120px;
+}
+
+.modal {
+  top: 50px;
+}
+
+.modal-header, h4, .close {
+  background-color: #333;
+  color: #fff !important;
+  text-align: center;
+  font-size: 30px;
+}
+
+.white {
+  background-color: #fff;
+  width: 100%;
+}
+
+.white {
+  background-color: #fff;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 45px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/*############################*/
+
+
+/*** navbar***/
+
+
+/*############################*/
+
+.navbar {
+  font-family: 'Roboto', sans-serif;
+  /*background-color: #2d2d30;*/
+  border: 0;
+  letter-spacing: 2px;
+  min-height: 50px;
+  top: 40px;
+  text-transform: uppercase;
+}
+
+.navbar-brand>img {
+  margin: 15px;
+  height: 80px;
+}
+
+.navbar-brand,
+.navbar-default .navbar-nav>li>a 
+{
+  color: #660000 !important;
+  line-height: 50px;
+  /*** line height mst be same as img ***/
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.navbar-default .navbar-nav>li>a:hover
+{
+  color: #fff !important;
+}
+
+#myNavbar ul li a:focus, #myNavbar ul li a:hover, #myNavbar ul li a:active {
+  background-color: #660000;
+  color: #FFF;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+.navbar-collapse {
+  min-height: 80px;
+  /* opacity: 0.8; */
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-top: none;
+  box-shadow: none;
+}
+
+
+/*############################*/
+
+
+/*** carousel  ***/
+
+
+/*############################*/
+
+.banner-caption {
+  left: 0;
+  right: 0;
+  text-align: center;
+  position: absolute;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 900;
+  font-size: 35px;
+  z-index: 999;
+  color: #fff;
+  text-shadow: 1px 1px 0px #000;
+  bottom: 25%;
+}
+
+.banner-caption hr {
+  width: 60%;
+  border-color: #fff;
+}
+
+
+/*** align navbar w/ carousel ***/
+
+.navbar {
+  position: absolute;
+}
+
+.carousel-inner>.item>img {
+  margin: 0 auto;
+}
+
+
+/*############################*/
+
+
+/*** contact form  ***/
+
+
+/*############################*/
+
+.form-control {
+  border-radius: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #660000;
+  color: #f1f1f1;
+  border-radius: 0;
+  transition: .2s;
+}
+
+.btn:hover, .btn:focus {
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #000;
+}
+
+.form-horizontal .form-group {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+#map {
+  width: 100%;
+  height: 467px;
+}
+
+
+/*############################*/
+
+
+/*** footer  ***/
+
+
+/*############################*/
+
+footer {
+  background-color: #2d2d30;
+  color: #777;
+  padding: 32px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+footer a {
+  color: #f5f5f5;
+  margin-top: 10px;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #660000;
+}
+
+
+/*############################*/
+
+
+/*** mobile display ***/
+
+
+/*############################*/
+
+@media (max-width: 767px) {
+  /* .container {
+    padding: 50px;
+  } */
+
+  body {
+    margin-top: 140px;
+  }
+  .banner-caption {
+    display: none;
+  }
+  .button {
+    display:none;
+  }
+  .navbar-toggle, 
+  .navbar-toggle:focus {
+    margin-top: 21px;
+    margin-bottom: 20px;
+    background-color: #660000;
+    color: #fff;
+  }
+
+  .container.white,
+  .container.gray
+  {
+    padding: 20px 50px;
+  }
+
+  .btn {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar {
+    top:65px;
+  }
+  .navbar-nav>li>a {
+    line-height: 17px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .jumbotron p {
+    font-size: 17px;
+  }
+  .bottom-menu {
+    display: none;
+  }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    margin-top: 20px;
+  }
+  #Intro {
+    text-align: center;
+    height: 65px;
+  }
+  .fa-2x {
+    margin-top: 15px;
+    font-size: 17px !important;
+  }
+}
+
+
+/*** Cambridge Begin ***/
+
+.address-line {
+  color: #660000;
+  font-size: 24px;
+  text-align: center;
+}
+
+.tour-buttons {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+p {
+  font-size: 14;
+}
+
+.banner {
+  width: 100%;
+  max-height: 500px;
+}
+
+.tag-line {
+  margin-top: 25px;
+  font-size: 18px;
+  text-align: center;
+}

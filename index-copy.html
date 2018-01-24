@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>The Depot</title>
+  
+  <meta charset="utf-8">
+  <meta name="author" content="Noah Huntington">
+  <meta name='reply-to' content='wtgeographer@gmail.com'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- bootstrap / jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- leaflet src -->
+  <link type="text/css" rel="stylesheet" href="leaflet/leaflet.css" />
+  <script type="text/javascript" src="leaflet/leaflet.js"></script>
+
+  <!-- leaflet AwesomeMarkers -->
+  <script src="js/leaflet.awesome-markers.js"></script>
+  <link href="css/leaflet.awesome-markers.css" rel="stylesheet">
+
+  <!-- font awesome -->
+  <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
+	<div id="Intro">
+		<div>
+			<p><i class="fa fa-phone-square fa-1x"></i>&nbsp&nbsp806.655.7732&nbsp&nbsp
+			<i class="fa fa-envelope fa-1x"></i>&nbsp&nbspinfo@lifeatthedepot.com</p>
+		</div>
+	</div>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="#home">
+          <img src="img/logo/logo.png" class="img-responsive" style="" alt="">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#alert-one">ONE-BED</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#alert-two">TWO-BED</a></li>
+          <li><a href="#loft">LOFT-APPT</a></li>
+          <li><a href="#retail">RETAIL</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- banner carousel -->
+  <div id="myCarousel" class="carousel slide" data-ride="true">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+	  <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img/sign.png" alt="" width="1200" height="700">
+      </div>
+
+      <div class="item">
+        <img src="img/concept_1.png" alt="" width="1200" height="700">
+        <div class="banner-caption">
+          <p>Premiere Retail Space</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/vintage.png" alt="" width="1200" height="700">
+        <div class="banner-caption">
+          <p>Canyons Newest Premiere Development.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/concept_2.png" alt="" width="1200" height="700">
+        <div class="banner-caption">
+          <p>Retail Space Available!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <!-- Container (main-content) -->
+  <div id="about" class="container gray">
+    <p><span style="font-size: 24px">Come Experience</span></p>
+    <span style="font-size:45px;">Life At The Depot!</span>
+    <hr>
+    <p>Thank you for visiting life at the depot.com. Conveniently located The Depot offers the unique opportunity to be within walking distance to businesses, residential living, grocery shopping, restaurants, and West Texas A&M University <strong>(GO BUFFS!!!)</strong>.</p>
+
+    <p>The Depot has been designed from the beginning to bring people, business and life together in a way never before seen in Canyon by combining residential living with office/retail all in one great location. Residents also benefit from nearby WT, United
+      Supermarket, Feldman's Wrongway Diner and more. Future residents please call or stop in to view our one bedroom, two bedroom, or loft apartment offerings.</p>
+
+    <p>Ammenities include:</p>
+    <p>
+      <ul class="">
+        <li>2 bedroom/2 bath</li>
+        <li>Granite counter tops</li>
+        <li>Stainless appliances</li>
+        <li>Gas stove</li>
+        <li>Personal garage</li>
+        <li>24 hour parking surveillance</li>
+        <li>washer dryer hookups</li>
+      </ul>
+    </p>
+    <br>
+    <br>
+    <p>Please contact us today to reserve your spot in what is sure to become Canyon's most talked about new development.</p>
+    <!-- Being within walking distance to all of the necessities makes this location ideal for anyone. For businesses please click on the link to see floor plans of our offerings. We have convenient well laid out floor plans including private back offices and single car garage for extra storage or those nasty winter days. Our location provides built in clientele within walking distance, ample parking and easy access. -->
+    <br>
+  </div>
+
+  <!-- Container (Loft Appts) -->
+  <div id="loft" class="container white">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">Loft Apartments</div>
+        <hr>
+        <p>The Depot Loft Apartments, located at the heart of The Depot immerses it's residents among a wide array of retail spaces and restaurants.</p>
+        <p>Residents enjoy 24/7/365 parking surveillance, granite counter tops, stainless appliances, gas stove, personal one car garage, along with great views overlooking beautifully-landscaped courtyards and all the excitement at The Depot.</p>
+        <p>The impressive features don’t stop there! Browse our galleries or come on by and experience one-of-a-kind loft living at The Depot Loft Apartments.</p>
+        <br>
+        <a class="btn btn-default" role="button" data-toggle="modal" data-target="#myModal">Gallery</a>
+      </div>
+    </div>
+  </div>
+  
+  
+
+		
+		
+
+  <!--LOFT APPT MODAL-->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="pull-left">Loft Apartments</div>
+          <button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
+        </div>
+        <div class="modal-body">
+
+          <!--begin carousel-->
+          <div id="myGallery" class="carousel slide" data-interval="false">
+            <div class="carousel-inner">
+              <div class="item active"> <img src="img/loft/img_4.jpg" alt="item0">
+                <div class="carousel-caption">
+                  <!-- <h3>Heading 3</h3>
+                  <p>Slide 0 description.</p> -->
+                </div>
+              </div>
+              <div class="item"> <img src="img/loft/img_2.jpg" alt="item1">
+                <div class="carousel-caption">
+                  <!-- <h3>Heading 3</h3>
+                  <p>Slide 1 description.</p> -->
+                </div>
+              </div>
+              <div class="item"> <img src="img/loft/img_3.jpg" alt="item2">
+                <div class="carousel-caption">
+                  <!-- <h3>Heading 3</h3>
+                  <p>Slide 2 description.</p> -->
+                </div>
+              </div>
+              <div class="item"> <img src="img/loft/img_1.jpg" alt="item3">
+                <div class="carousel-caption">
+                  <!-- <h3>Heading 3</h3>
+                  <p>Slide 3 description.</p> -->
+                </div>
+              </div>
+              <div class="item"> <img src="img/loft/img_5.jpg" alt="item4">
+                <div class="carousel-caption">
+                  <!-- <h3>Heading 3</h3>
+                  <p>Slide 4 description.</p> -->
+                </div>
+              </div>
+              <div class="item"> <img src="img/loft/img_6.jpg" alt="item5">
+                <div class="carousel-caption">
+                  <!-- <h3>Heading 3</h3>
+                  <p>Slide 5 description.</p> -->
+                </div>
+              </div>
+              <div class="item"> <img src="img/loft/img_7.jpg" alt="item4">
+                <div class="carousel-caption">
+                  <!-- <h3>Heading 3</h3>
+                  <p>Slide 4 description.</p> -->
+                </div>
+              </div>
+              <div class="item"> <img src="img/loft/img_8.jpg" alt="item5">
+                <div class="carousel-caption">
+                  <!-- <h3>Heading 3</h3>
+                  <p>Slide 5 description.</p> -->
+                </div>
+              </div>
+            </div>
+            <!-- controls-->
+            <a class="left carousel-control" href="#myGallery" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myGallery" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div>
+        </div>
+        <div class="modal-footer">
+			<div class="pull-left">
+				<small>&copy GDI, Inc. 2017</small>
+			</div>
+			<div class="pull-right">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ONE BED MODAL -->
+  <div class="modal fade" id="alert-one" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Check back again soon!</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+            We're sorry, but at this time, all of our <strong>One-Bedrooom</strong> Units are occupied. Please check back periodically for updates on any availabilities. We look forward to the opportunity to serve your housing needs.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TWO BED MODAL -->
+  <div class="modal fade" id="alert-two" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Check back again soon!</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+            We're sorry, but at this time, all of our <strong>Two-Bedrooom</strong> Units are occupied. Please check back periodically for updates on any availabilities. We look forward to the opportunity to serve your housing needs.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div id="retail" class="container gray">
+    <div class="section-title">Retail Space</div>
+    <hr>
+
+    <p>We are now pre-leasing office and Retail space. For businesses please click on the link (below) to see floor plans of our offerings. We have convenient well laid out floor plans including private back offices and single car garage for extra storage
+      or those nasty winter days. Our location provides built in clientele within walking distance, ample parking and easy access.</p>
+    <br>
+    <p>Please contact us today to reserve your spot in what is sure to become Canyon’s most talked about new development.</p>
+    <br>
+    <a class="btn btn-default" href="img/retail-plans.pdf"  target="_blank" role="button">Floor Plans</a>
+
+  </div>
+
+
+  <!-- CONTACT -->
+  <div id="contact" class="container white">
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Contact Us...</h2>
+		  <hr>
+		   <p><i class="fa fa-map-marker fa-1x"></i>&nbsp&nbsp1901 N. 2nd<br>
+          &nbsp&nbsp&nbsp&nbsp&nbspCanyon, TX 79015</p>
+		  <p><i class="fa fa-phone-square fa-1x"></i>&nbsp&nbsp806-655-7732<br></p>
+          <p><i class="fa fa-envelope fa-1x"></i>&nbsp&nbspinfo@lifeatthedepot.com<br></p>
+		  <br>
+          <br>
+        </div>
+
+        <div class="col-md-6">
+          <h2>Questions...</h2>
+		  <hr>
+          <form action="send_form.php" method="POST" role="form" class="form-horizontal">
+
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <!-- style="margin-right: 15px;"> -->
+                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+              </div>
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12 form-group">
+                <textarea class="form-control" id="comments" name="comments" placeholder="Questions or Concerns..." rows="5"></textarea>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <button class="btn pull-right" type="submit">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Add Google Maps -->
+  <div id="map"></div>
+
+  <script>
+    var hybridMap = new L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid3RnZW9ncmFwaGVyIiwiYSI6ImNpdGFicWJqYjAwdzUydHM2M2g0MmhsYXAifQ.oO-MYNUC2tVeXa1xYbCIyw", {
+      attribution: "&copy <a href=https://www.mapbox.com/about/maps>Mapbox</a> &copy <a href=https://www.digitalglobe.com/>DigitalGlobe</a> &copy <a href=http://www.openstreetmap.org/copyright>OpenStreetMap</a>",
+      maxZoom: 20,
+      maxNativeZoom: 18
+    });
+
+    var streetsLayer = new L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid3RnZW9ncmFwaGVyIiwiYSI6ImNpdGFicWJqYjAwdzUydHM2M2g0MmhsYXAifQ.oO-MYNUC2tVeXa1xYbCIyw", {
+      attribution: "&copy <a href=https://www.mapbox.com/about/maps>Mapbox</a> &copy <a href=http://www.openstreetmap.org/copyright>OpenStreetMap</a>&nbsp<a href=https://www.mapbox.com/map-feedback/>| Improve this map</a> ",
+      maxZoom: 20,
+      maxNativeZoom: 18
+    });
+
+    var center = new L.LatLng(34.983978, -101.923629);
+    var map = new L.Map('map', {
+      center: center,
+      zoom: 17,
+      attributionControl: true,
+      zoomControl: false,
+    });
+
+    var baselayers = {
+      "Hybrid": hybridMap,
+      "Streets": streetsLayer
+
+    };
+    map.addLayer(streetsLayer)
+
+    // Add back when imagery is updated
+    // L.control.layers(baselayers).addTo(map);
+
+
+	//<!-- var home = L.AwesomeMarkers.icon({ -->
+    //<!-- icon: 'star', -->
+    //<!-- markerColor: 'orange' -->
+    //<!-- }); -->
+
+	latlng = [34.983978, -101.923629]
+	marker = L.marker(latlng).addTo(map);
+	//<!-- , { -->
+                    //<!-- icon: home -->
+					//<!-- }).addTo(map); -->
+
+    map.setMaxBounds(map.getBounds());
+
+    marker.bindPopup("<h3>The Depot!<h3>").openPopup();
+  </script>
+
+  <footer>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 bottom-menu">
+        <ul class="" style="list-style: none;">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#alert-one">ONE-BED</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#alert-two">TWO-BED</a></li>
+          <li><a href="#loft">LOFT-APPT</a></li>
+          <li><a href="#retail">RETAIL</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 col-sm-6 text-center">
+        <a class="up-arrow" href="#home" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a><br><br>
+        <span style="font-size:17px;">&copy GDI, Inc. 2017</span>
+      </div>
+      <div class="col-md-4 col-sm-6 text-center">
+        <a style="" href="tel:806-655-7732"><i class="fa fa-phone fa-2x"></i></a>
+        <a href="https://www.facebook.com/lifeatthedepot/" target="_blank">
+      <i class="fa fa-facebook fa-2x"></i>
+      </a>
+      </div>
+    </div>
+  </footer>
+<script>
+$(document).ready(function () {
+  $(".navbar-nav li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  });
+});
+</script>
+
+  <script>
+    $(document).ready(function() {
+      // Initialize Tooltip
+      $('[data-toggle="tooltip"]').tooltip();
+
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#home']").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function() {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+
+    })
+  </script>
+
+</body>
+
+</html>

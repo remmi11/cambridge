@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Cambridge House</title>
+
+  <meta charset="utf-8">
+  <meta name="author" content="Noah Huntington">
+  <meta name='reply-to' content='wtgeographer@gmail.com'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- leaflet src -->
+  <link type="text/css" rel="stylesheet" href="leaflet/leaflet.css" />
+
+
+  <!-- leaflet AwesomeMarkers -->
+
+  <link href="css/leaflet.awesome-markers.css" rel="stylesheet">
+
+
+  <!-- font awesome -->
+  <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- google fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <div id="Intro">
+    <div>
+      <p>
+        <i class="fa fa-phone-square fa-1x"></i>&nbsp;&nbsp;806.655.7732&nbsp;&nbsp;
+        <i class="fa fa-envelope fa-1x"></i>&nbsp;&nbsp;info@cambridgehousecanyon.com</p>
+    </div>
+  </div>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- <a class="navbar-brand" href="#home">
+        Cambridge House Apartments
+        </a> -->
+        <a class="navbar-brand text-uppercase" href="#">Cambridge House</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#">HOME</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container banner">
+    <div class="row">
+      <div class="col-12">
+        <img src="img/cover.png" alt="company logo" style="width: 100%;">
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Container (main-content) -->
+  <div id="contact" class="container white">
+    <div class="row">
+      <div class="col-12">
+        <!-- <div class="">Loft Apartments</div> -->
+        <h1 class="section-title text-uppercase">
+          <span>Cambridge House</span>
+        </h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="address-line">
+          <i class="fa fa-map-marker" aria-hidden="true"></i> 22 Highway 60, Canyon, TX 79015</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 text-center tag-line">
+        <p>Unique apartment homes with Old World Charm! Our hilltop location is just minutes from WTAMU.</p> 
+          <strong>(GO BUFFS!!!)</strong>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 text-center tour-buttons">
+        <div class="col-md-6 m-b-md">
+          <a href="#" id="" class="" data-toggle="modal" data-target="#infoModal">
+            <button class="btn btn-primary-outline btn-lg btn-block">
+              Request Information
+            </button>
+          </a>
+        </div>
+        <div class="col-md-6 m-b-md">
+            <a href="#" id="" class="" data-toggle="modal" data-target="#tourModal">
+              <button class="btn btn-primary-outline btn-lg btn-block">
+                Schedule a Tour
+              </button>
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="about" class="container gray">
+    <div class="section-title text-uppercase">amenities</div>
+    <hr>
+    <br>
+    <div class="row>">
+      <div class="col-md-6 m-b-md">
+        <p>We offer beautiful and spacious one bedroom, two bedroom and three bedroom apartments for rent in Canyon, TX. Come
+          see this hilltop location just a two minute drive to West Texas A&ampM University.
+        </p>
+        <p>
+          Studios, one bedroom and two bedroom apartments are available. Enjoy amenities including on-site laundry facilities, 24hr.
+          maintenance, and stove and refrigerator furnished in all units. </p>
+        <br>
+      </div>
+      <div class="col-md-6 m-b-md">
+        <div class="pull-right">
+          <h1>Units Starting @ $350</h1>
+          <p>Make an appointment to come see yours today.</p>
+        </div>
+      </div>
+      <!-- <a class="btn btn-default" href="img/retail-plans.pdf" target="_blank" role="button">Floor Plans</a> -->
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div id="infoModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Information Request</h4>
+    </div>
+    <div class="modal-body">
+        <form class="form-horizontal" name="commentform" method="post" action="send_info_request.php">
+            <div class="form-group">
+                <label class="control-label col-md-4" for="first_name">First Name</label>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4" for="last_name">Last Name</label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4" for="email">Email Address</label>
+                <div class="col-md-6">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4" for="comment">Question or Comment</label>
+                <div class="col-md-6">
+                    <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your question or comment here"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-6">
+                    <button type="submit" value="Submit" class="btn btn-custom pull-right" id="send_btn">Send</button>
+                </div>
+            </div>
+        </form>
+    </div><!-- End of Modal body -->
+    </div><!-- End of Modal content -->
+    </div><!-- End of Modal dialog -->
+</div><!-- End of Modal -->
+</div><!-- End of Container -->
+
+<!-- Modal -->
+<div id="tourModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="tourModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Scedule a Tour</h4>
+    </div>
+    <div class="modal-body">
+        <form class="form-horizontal" name="commentform" method="post" action="send_tour_request.php">
+            <div class="form-group">
+                <label class="control-label col-md-4" for="first_name">First Name</label>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4" for="last_name">Last Name</label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4" for="email">Email Address</label>
+                <div class="col-md-6">
+                <!-- <span class="input-group-addon">@</span> -->
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4" for="comment">Call Back Number:</label>
+                <div class="col-md-6">
+                    <!-- <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your question or comment here"></textarea> -->
+                    <input type="text" class="form-control" id="comments" name="comments" placeholder="Enter Callback Number"/>
+
+                  </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-6">
+                    <button type="submit" value="Submit" class="btn btn-custom pull-right" id="send_btn">Send</button>
+                </div>
+            </div>
+        </form>
+    </div><!-- End of Modal body -->
+    </div><!-- End of Modal content -->
+    </div><!-- End of Modal dialog -->
+</div><!-- End of Modal -->
+</div><!-- End of Container -->
+
+
+  <!-- Add Google Maps -->
+  <div id="map"></div>
+
+  <footer>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 bottom-menu">
+        <ul class="" style="list-style: none;">
+          <li>
+            <a href="#">HOME</a>
+          </li>
+          <li>
+            <a href="#contact">CONTACT</a>
+          </li>
+          <li>
+            <a href="#about">ABOUT</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 col-sm-6 text-center">
+        <a class="up-arrow" href="#" data-toggle="tooltip" title="TO TOP">
+          <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <br>
+        <br>
+        <span>&copy GDI, Inc. 2018</span>
+      </div>
+      <div class="col-md-4 col-sm-6 text-center">
+        <a style="" href="tel:806-655-7732">
+          <i class="fa fa-phone fa-2x"></i>
+        </a>
+        <a href="https://www.facebook.com/cambridgecanyontx/" target="_blank">
+          <i class="fa fa-facebook fa-2x"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="leaflet/leaflet.js"></script>
+  <script src="js/leaflet.awesome-markers.js"></script>
+  <script type="text/javascript" src="js/map.js"></script>
+
+
+  <script>
+    $(document).ready(function () {
+      $('#requestInfo').modal('show');
+      $(".navbar-nav li a").click(function (event) {
+        $(".navbar-collapse").collapse('hide');
+      });
+      // Initialize Tooltip
+      $('[data-toggle="tooltip"]').tooltip();
+
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#home']").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+
+    })
+  </script>
+
+</body>
+
+</html>
