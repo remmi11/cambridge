@@ -238,7 +238,7 @@ textarea {
 footer {
   background-color: #2d2d30;
   color: #777;
-  padding: 32px;
+  padding: 50px 120px;
   font-weight: 500;
   font-size: 18px;
 }
@@ -315,6 +315,9 @@ footer a:hover {
   #Intro {
     text-align: center;
     height: 65px;
+  }
+  #Intro p{
+    text-decoration: none;
   }
   .fa-2x {
     margin-top: 15px;
