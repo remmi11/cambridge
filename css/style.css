@@ -63,7 +63,7 @@ hr {
 }
 
 .modal {
-  top: 50px;
+  top: 80px;
 }
 
 .modal-header, h4, .close {
@@ -71,11 +71,6 @@ hr {
   color: #fff !important;
   text-align: center;
   font-size: 30px;
-}
-
-.white {
-  background-color: #fff;
-  width: 100%;
 }
 
 .white {
@@ -104,22 +99,23 @@ hr {
   letter-spacing: 2px;
   min-height: 50px;
   top: 40px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
-.navbar-brand>img {
-  margin: 15px;
-  height: 80px;
+.navbar-brand {
+  color: #660000 !important;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 50px;
 }
 
-.navbar-brand,
 .navbar-default .navbar-nav>li>a 
 {
   color: #660000 !important;
   line-height: 50px;
+  font-size: 18px;
+  font-weight: 600;
   /*** line height mst be same as img ***/
-  font-size: 20px;
-  font-weight: 700;
 }
 
 .navbar-default .navbar-nav>li>a:hover
@@ -241,6 +237,8 @@ footer {
   padding: 50px 120px;
   font-weight: 500;
   font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer a {
@@ -282,12 +280,6 @@ footer a:hover {
     margin-bottom: 20px;
     background-color: #660000;
     color: #fff;
-  }
-
-  .container.white,
-  .container.gray
-  {
-    padding: 20px 50px;
   }
 
   .btn {
