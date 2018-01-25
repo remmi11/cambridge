@@ -34,7 +34,7 @@
 
 </head>
 
-<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="170">
 
   <div id="Intro">
     <div>
@@ -337,12 +337,14 @@
           });
         } // End if
       });
-      
+
       // rotate navbar hamburger icon 
       $(".navbar-toggle").on("click", function () {
         $(this).toggleClass("rotate");
       });
-
+      $(".nav > li").click(function () {
+        $(".navbar-toggle").toggleClass("rotate");
+      });
     })
   </script>
 

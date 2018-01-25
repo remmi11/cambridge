@@ -303,10 +303,6 @@ footer a:hover {
         padding-top: 15px;
         padding-bottom: 15px;
     }
-    .navbar-default .navbar-collapse,
-    .navbar-default .navbar-form {
-        margin-top: 20px;
-    }
     .navbar {
         top: 65px;
     }
@@ -336,8 +332,10 @@ footer a:hover {
     }
     .container.white,
     .container.gray {
-        padding: 25px 50px;
+        padding: 60px 50px;
     }
+    .navbar-default .navbar-nav>li>a {
+        line-height: 20px;
 }
 
 
@@ -400,9 +398,9 @@ p {
 	position: relative;
 	transition: all 500ms ease-in-out;
 }
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: transparent !important;
+.navbar-toggle:hover, .navbar-toggle:focus {
+	/*background-color: transparent !important;*/
+	background-color: #660000;
 }
 
 .navbar-default .navbar-toggle {
