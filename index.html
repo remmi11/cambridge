@@ -26,8 +26,8 @@
   <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- google fonts -->
-   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
   <!-- custom css -->
   <link rel="stylesheet" href="css/style.css">
 
@@ -35,13 +35,17 @@
 </head>
 
 <body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
+
   <div id="Intro">
     <div>
-      <p>
-        <i class="fa fa-phone-square fa-1x"></i>&nbsp;&nbsp;806.655.7732&nbsp;&nbsp;
-        <i class="fa fa-envelope fa-1x"></i>&nbsp;&nbsp;info@cambridgehousecanyon.com</p>
+      <span class="rwd-line">
+        <i class="fa fa-phone-square fa-1x"></i>&nbsp;&nbsp;806.655.7732&nbsp;&nbsp;</span>
+
+      <span class="rwd-line">
+        <i class="fa fa-envelope fa-1x"></i>&nbsp;&nbsp;info@cambridgehousecanyon.com</span>
     </div>
   </div>
+
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -100,8 +104,8 @@
     </div>
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2 text-center tag-line">
-        <p>Unique apartment homes with Old World Charm! Our hilltop location is just minutes from WTAMU.</p> 
-          <strong>(GO BUFFS!!!)</strong>
+        <p>Unique apartment homes with Old World Charm! Our hilltop location is just minutes from WTAMU.</p>
+        <strong>(GO BUFFS!!!)</strong>
       </div>
     </div>
 
@@ -115,12 +119,12 @@
           </a>
         </div>
         <div class="col-md-6 m-b-md">
-            <a href="#" id="" class="" data-toggle="modal" data-target="#tourModal">
-              <button class="btn btn-primary-outline btn-lg btn-block">
-                Schedule a Tour
-              </button>
-            </a>
-          </div>
+          <a href="#" id="" class="" data-toggle="modal" data-target="#tourModal">
+            <button class="btn btn-primary-outline btn-lg btn-block">
+              Schedule a Tour
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -132,11 +136,12 @@
     <br>
     <div class="row>">
       <div class="col-md-6 m-b-md">
-        <p>We offer beautiful and spacious studions, one bedroom, and two bedroom apartments for rent in Canyon, TX. Come
-          see this hilltop location just a two minute drive to West Texas A&ampM University.
+        <p>We offer beautiful and spacious studions, one bedroom, and two bedroom apartments for rent in Canyon, TX. Come see
+          this hilltop location just a two minute drive to West Texas A&ampM University.
         </p>
         <p>
-          Studios, one bedroom and two bedroom apartments are available. Enjoy amenities including on-site laundry facilities, and stove and refrigerator furnished in all units. </p>
+          Studios, one bedroom and two bedroom apartments are available. Enjoy amenities including on-site laundry facilities, and
+          stove and refrigerator furnished in all units. </p>
         <br>
       </div>
       <div class="col-md-6 m-b-md">
@@ -150,99 +155,109 @@
   </div>
 
   <!-- Modal -->
-<div id="infoModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+  <div id="infoModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-    <div class="modal-content">
-    <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title">Information Request</h4>
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Information Request</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal" name="commentform" method="post" action="send_info_request.php">
+            <div class="form-group">
+              <label class="control-label col-md-4" for="first_name">First Name</label>
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-md-4" for="last_name">Last Name</label>
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-md-4" for="email">Email Address</label>
+              <div class="col-md-6">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-md-4" for="comment">Question or Comment</label>
+              <div class="col-md-6">
+                <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your question or comment here"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-6">
+                <button type="submit" value="Submit" class="btn btn-custom pull-right" id="send_btn">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- End of Modal body -->
+      </div>
+      <!-- End of Modal content -->
     </div>
-    <div class="modal-body">
-        <form class="form-horizontal" name="commentform" method="post" action="send_info_request.php">
-            <div class="form-group">
-                <label class="control-label col-md-4" for="first_name">First Name</label>
-                <div class="col-md-6">
-                  <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name"/>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="control-label col-md-4" for="last_name">Last Name</label>
-                <div class="col-md-6">
-                    <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name"/>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="control-label col-md-4" for="email">Email Address</label>
-                <div class="col-md-6">
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="control-label col-md-4" for="comment">Question or Comment</label>
-                <div class="col-md-6">
-                    <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your question or comment here"></textarea>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-md-6">
-                    <button type="submit" value="Submit" class="btn btn-custom pull-right" id="send_btn">Send</button>
-                </div>
-            </div>
-        </form>
-    </div><!-- End of Modal body -->
-    </div><!-- End of Modal content -->
-    </div><!-- End of Modal dialog -->
-</div><!-- End of Modal -->
-</div><!-- End of Container -->
+    <!-- End of Modal dialog -->
+  </div>
+  <!-- End of Modal -->
+  </div>
+  <!-- End of Container -->
 
-<!-- Modal -->
-<div id="tourModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="tourModalLabel" aria-hidden="true">
+  <!-- Modal -->
+  <div id="tourModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="tourModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-    <div class="modal-content">
-    <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title">Scedule a Tour</h4>
-    </div>
-    <div class="modal-body">
-        <form class="form-horizontal" name="commentform" method="post" action="send_tour_request.php">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Scedule a Tour</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal" name="commentform" method="post" action="send_tour_request.php">
             <div class="form-group">
-                <label class="control-label col-md-4" for="first_name">First Name</label>
-                <div class="col-md-6">
-                  <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name"/>
-                </div>
+              <label class="control-label col-md-4" for="first_name">First Name</label>
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name" />
+              </div>
             </div>
             <div class="form-group">
-                <label class="control-label col-md-4" for="last_name">Last Name</label>
-                <div class="col-md-6">
-                    <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name"/>
-                </div>
+              <label class="control-label col-md-4" for="last_name">Last Name</label>
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" />
+              </div>
             </div>
             <div class="form-group">
-                <label class="control-label col-md-4" for="email">Email Address</label>
-                <div class="col-md-6">
+              <label class="control-label col-md-4" for="email">Email Address</label>
+              <div class="col-md-6">
                 <!-- <span class="input-group-addon">@</span> -->
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
-                </div>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" />
+              </div>
             </div>
             <div class="form-group">
-                <label class="control-label col-md-4" for="comment">Call Back Number:</label>
-                <div class="col-md-6">
-                    <!-- <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your question or comment here"></textarea> -->
-                    <input type="text" class="form-control" id="comments" name="comments" placeholder="Enter Callback Number"/>
+              <label class="control-label col-md-4" for="comment">Call Back Number:</label>
+              <div class="col-md-6">
+                <!-- <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your question or comment here"></textarea> -->
+                <input type="text" class="form-control" id="comments" name="comments" placeholder="Enter Callback Number" />
 
-                  </div>
+              </div>
             </div>
             <div class="form-group">
-                <div class="col-md-6">
-                    <button type="submit" value="Submit" class="btn btn-custom pull-right" id="send_btn">Send</button>
-                </div>
+              <div class="col-md-6">
+                <button type="submit" value="Submit" class="btn btn-custom pull-right" id="send_btn">Send</button>
+              </div>
             </div>
-        </form>
-    </div><!-- End of Modal body -->
-    </div><!-- End of Modal content -->
-    </div><!-- End of Modal dialog -->
-</div><!-- End of Modal -->
-</div><!-- End of Container -->
+          </form>
+        </div>
+        <!-- End of Modal body -->
+      </div>
+      <!-- End of Modal content -->
+    </div>
+    <!-- End of Modal dialog -->
+  </div>
+  <!-- End of Modal -->
+  </div>
+  <!-- End of Container -->
 
 
   <!-- Add Google Maps -->
@@ -321,6 +336,11 @@
             window.location.hash = hash;
           });
         } // End if
+      });
+      
+      // rotate navbar hamburger icon 
+      $(".navbar-toggle").on("click", function () {
+        $(this).toggleClass("rotate");
       });
 
     })
